@@ -1,0 +1,15 @@
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.DAL.deps.json
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.DAL.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.DAL.pdb
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.AssemblyInfoInputs.cache
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.AssemblyInfo.cs
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.csproj.CoreCompileInputs.cache
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\refint\SistemaProven.DAL.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.pdb
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\ref\SistemaProven.DAL.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.Entity.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.Entity.pdb
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.csproj.AssemblyReference.cache
+C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaP.FE9B239C.Up2Date

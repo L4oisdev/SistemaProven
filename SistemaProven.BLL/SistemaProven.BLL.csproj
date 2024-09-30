@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaProven.DAL\SistemaProven.DAL.csproj" />
+    <ProjectReference Include="..\SistemaProven.Entity\SistemaProven.Entity.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Implementacion\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+</Project>
