@@ -11,8 +11,8 @@ using SistemaProven.DAL.DBContext;
 using Microsoft.EntityFrameworkCore;
 using SistemaProven.DAL.Interfaces;
 using SistemaProven.DAL.Implementacion;
-//using SistemaProven.BLL.Interfaces;
-//using SistemaProven.BLL.Implementacion;
+using SistemaProven.BLL.Interfaces;
+using SistemaProven.BLL.Implementacion;
 
 namespace SistemaProven.IOC
 {
@@ -29,6 +29,8 @@ namespace SistemaProven.IOC
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IVentaRepository, VentaRepository>();
+
+            services.AddScoped<ICorreoService, CorreoService>();
 
 
         }
