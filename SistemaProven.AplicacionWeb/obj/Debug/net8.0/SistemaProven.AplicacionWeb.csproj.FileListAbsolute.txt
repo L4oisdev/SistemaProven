@@ -258,3 +258,6 @@ C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\
 C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\Firebase.Auth.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\Firebase.Storage.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\obj\Debug\net8.0\SistemaProven.AplicacionWeb.sourcelink.json

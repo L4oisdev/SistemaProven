@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SistemaProven.DAL\SistemaProven.DAL.csproj" />
     <ProjectReference Include="..\SistemaProven.Entity\SistemaProven.Entity.csproj" />
   </ItemGroup>

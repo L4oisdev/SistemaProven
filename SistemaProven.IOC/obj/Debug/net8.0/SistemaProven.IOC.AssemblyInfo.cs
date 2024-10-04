@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SistemaProven.IOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+735a2c0e5670f34ff5f0f5fab0b00ccf6145fbd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("SistemaProven.IOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SistemaProven.IOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

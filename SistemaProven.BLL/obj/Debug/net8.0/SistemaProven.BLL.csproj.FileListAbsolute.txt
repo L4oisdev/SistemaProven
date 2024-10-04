@@ -15,3 +15,4 @@ C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaPro
 C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.Entity.pdb
 C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.csproj.AssemblyReference.cache
 C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaP.9265848A.Up2Date
+C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.sourcelink.json
