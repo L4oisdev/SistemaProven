@@ -34,6 +34,10 @@ namespace SistemaProven.IOC
 
             services.AddScoped<IFireBaseService, FireBaseService>();
 
+            services.AddScoped<IUtilidadesService, UtilidadesService>();
+
+            services.AddScoped<IRolService, RolService>();
+
         }
     }
 }  
