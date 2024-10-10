@@ -7084,19 +7084,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+    "C:\\Users\\pc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.IOC\\SistemaProven.IOC.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.IOC\\SistemaProven.IOC.csproj",
       "projectName": "SistemaProven.IOC",
-      "projectPath": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.IOC\\SistemaProven.IOC.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.IOC\\obj\\",
+      "projectPath": "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.IOC\\SistemaProven.IOC.csproj",
+      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.IOC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7104,17 +7104,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.BLL\\SistemaProven.BLL.csproj": {
-              "projectPath": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.BLL\\SistemaProven.BLL.csproj"
+            "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.BLL\\SistemaProven.BLL.csproj": {
+              "projectPath": "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.BLL\\SistemaProven.BLL.csproj"
             },
-            "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.DAL\\SistemaProven.DAL.csproj": {
-              "projectPath": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.DAL\\SistemaProven.DAL.csproj"
+            "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.DAL\\SistemaProven.DAL.csproj": {
+              "projectPath": "C:\\Users\\pc\\source\\repos\\L4oisdev\\SistemaProven\\SistemaProven.DAL\\SistemaProven.DAL.csproj"
             }
           }
         }
@@ -7149,7 +7150,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

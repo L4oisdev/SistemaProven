@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SistemaProven.BLL
-build_property.ProjectDir = C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\
+build_property.ProjectDir = C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
