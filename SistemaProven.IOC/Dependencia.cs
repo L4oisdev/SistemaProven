@@ -38,6 +38,8 @@ namespace SistemaProven.IOC
 
             services.AddScoped<IRolService, RolService>();
 
+            services.AddScoped<IUsuarioService, UsuarioService>();
+
         }
     }
 }  
