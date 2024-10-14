@@ -14,3 +14,19 @@ C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaPro
 C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.csproj.AssemblyReference.cache
 C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaP.FE9B239C.Up2Date
 C:\Sistema de ventas\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.sourcelink.json
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.DAL.deps.json
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.DAL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.DAL.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.Entity.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\bin\Debug\net8.0\SistemaProven.Entity.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.AssemblyInfo.cs
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.sourcelink.json
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaP.FE9B239C.Up2Date
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\refint\SistemaProven.DAL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\SistemaProven.DAL.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.DAL\obj\Debug\net8.0\ref\SistemaProven.DAL.dll

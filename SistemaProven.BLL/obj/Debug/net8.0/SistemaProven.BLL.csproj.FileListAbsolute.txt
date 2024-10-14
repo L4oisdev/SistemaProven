@@ -16,3 +16,21 @@ C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaPro
 C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.csproj.AssemblyReference.cache
 C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaP.9265848A.Up2Date
 C:\Sistema de ventas\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.sourcelink.json
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.BLL.deps.json
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.BLL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.BLL.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.DAL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.Entity.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.DAL.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\bin\Debug\net8.0\SistemaProven.Entity.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.AssemblyInfo.cs
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.sourcelink.json
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaP.9265848A.Up2Date
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\refint\SistemaProven.BLL.dll
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\SistemaProven.BLL.pdb
+C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.BLL\obj\Debug\net8.0\ref\SistemaProven.BLL.dll
