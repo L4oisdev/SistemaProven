@@ -261,3 +261,5 @@ C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\
 C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\Firebase.Auth.dll
 C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\Firebase.Storage.dll
 C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\obj\Debug\net8.0\SistemaProven.AplicacionWeb.sourcelink.json
+C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\AutoMapper.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.AplicacionWeb\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
