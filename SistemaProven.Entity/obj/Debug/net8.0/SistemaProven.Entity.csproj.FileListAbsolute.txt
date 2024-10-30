@@ -27,3 +27,4 @@ C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.Entity\obj\Debug\n
 C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.Entity\obj\Debug\net8.0\SistemaProven.Entity.pdb
 C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.Entity\obj\Debug\net8.0\SistemaProven.Entity.genruntimeconfig.cache
 C:\Users\pc\source\repos\L4oisdev\SistemaProven\SistemaProven.Entity\obj\Debug\net8.0\ref\SistemaProven.Entity.dll
+C:\Sistema de ventas\SistemaProven\SistemaProven.Entity\obj\Debug\net8.0\SistemaProven.Entity.sourcelink.json

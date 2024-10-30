@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b3EeWmXg9mrdrE4G7Mm/ajpWAWCMQO9mh3k1Y5Bwi9Q=",
+  "Hash": "yEp2AmimBJ4p4OubQs0pe+KASuEMzLwYYvnMFbdMcyU=",
   "Source": "SistemaProven.AplicacionWeb",
   "BasePath": "_content/SistemaProven.AplicacionWeb",
   "Mode": "Default",
@@ -319,6 +319,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vistas\\datatables-demo.js"
+    },
+    {
+      "Identity": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.AplicacionWeb\\wwwroot\\js\\vistas\\Usuario_Index.js",
+      "SourceId": "SistemaProven.AplicacionWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.AplicacionWeb\\wwwroot\\",
+      "BasePath": "_content/SistemaProven.AplicacionWeb",
+      "RelativePath": "js/vistas/Usuario_Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\Usuario_Index.js"
     },
     {
       "Identity": "C:\\Sistema de ventas\\SistemaProven\\SistemaProven.AplicacionWeb\\wwwroot\\scss\\_buttons.scss",

@@ -362,13 +362,6 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# Ignorar carpetas de compilación generadas automáticamente
-/SistemaProven.AplicacionWeb/obj/
-/SistemaProven.BLL/obj/
-/SistemaProven.DAL/obj/
-/SistemaProven.Entity/obj/
-/SistemaProven.IOC/obj/
-
 # Ignorar archivos de compilación de .NET
 bin/
 obj/
