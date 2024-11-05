@@ -45,8 +45,9 @@ namespace SistemaProven.BLL.Implementacion
                 {
                     Host = Config["host"],
                     Port = int.Parse(Config["puerto"]),
+                    Credentials = credenciales,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
-                    UseDefaultCredentials = true,
+                    UseDefaultCredentials = false,
                     EnableSsl = true,
                 };
 
