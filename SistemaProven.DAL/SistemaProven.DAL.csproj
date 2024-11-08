@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SistemaProven.Entity\SistemaProven.Entity.csproj" />
   </ItemGroup>
 

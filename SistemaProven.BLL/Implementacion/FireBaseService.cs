@@ -18,13 +18,12 @@ namespace SistemaProven.BLL.Implementacion
 
         public FireBaseService(IGenericRepository<Configuracion> repositorio)
         {
-            _repositorio = repositorio; 
-            
+            _repositorio = repositorio;
         }
 
-        public async Task<string> SubirStorage(Stream ArchivoStream, string CarpetaDestino, string NombreArchivo)
+        public async Task<string> SubirStorage(Stream StreamArchivo, string CarpetaDestino, string NombreArchivo)
         {
-            string imagenUrl = "";
+            string UrlImagen = "";
 
             try
             {
@@ -32,9 +31,9 @@ namespace SistemaProven.BLL.Implementacion
 
                 Dictionary<string, string> Config = query.ToDictionary(keySelector: c => c.Propiedad, elementSelector: c => c.Valor);
 
-                var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
 
-                var signIn = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
+                var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
+                var singIn = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
 
                 var cancellation = new CancellationTokenSource();
 
@@ -42,21 +41,21 @@ namespace SistemaProven.BLL.Implementacion
                     Config["ruta"],
                     new FirebaseStorageOptions
                     {
-                        AuthTokenAsyncFactory = () => Task.FromResult(signIn.FirebaseToken),
+                        AuthTokenAsyncFactory = () => Task.FromResult(singIn.FirebaseToken),
                         ThrowOnCancel = true
                     })
                     .Child(Config[CarpetaDestino])
-                    .Child(Config[NombreArchivo])
-                    .PutAsync(ArchivoStream, cancellation.Token);
+                    .Child(NombreArchivo)
+                    .PutAsync(StreamArchivo, cancellation.Token);
 
-                imagenUrl = await task;
+                UrlImagen = await task;
             }
-            catch 
-            {
-                imagenUrl = "";
+            catch (Exception ex) {
+                Console.WriteLine("Error en SubirStorage: " + ex.Message);
+                UrlImagen = "";
             }
 
-            return imagenUrl;
+            return UrlImagen;
         }
 
         public async Task<bool> EliminarStorage(string CarpetaDestino, string NombreArchivo)
@@ -67,9 +66,9 @@ namespace SistemaProven.BLL.Implementacion
 
                 Dictionary<string, string> Config = query.ToDictionary(keySelector: c => c.Propiedad, elementSelector: c => c.Valor);
 
-                var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
 
-                var signIn = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
+                var auth = new FirebaseAuthProvider(new FirebaseConfig(Config["api_key"]));
+                var singIn = await auth.SignInWithEmailAndPasswordAsync(Config["email"], Config["clave"]);
 
                 var cancellation = new CancellationTokenSource();
 
@@ -77,14 +76,15 @@ namespace SistemaProven.BLL.Implementacion
                     Config["ruta"],
                     new FirebaseStorageOptions
                     {
-                        AuthTokenAsyncFactory = () => Task.FromResult(signIn.FirebaseToken),
+                        AuthTokenAsyncFactory = () => Task.FromResult(singIn.FirebaseToken),
                         ThrowOnCancel = true
                     })
                     .Child(Config[CarpetaDestino])
-                    .Child(Config[NombreArchivo])
+                    .Child(NombreArchivo)
                     .DeleteAsync();
 
                 await task;
+
                 return true;
             }
             catch
@@ -92,5 +92,7 @@ namespace SistemaProven.BLL.Implementacion
                 return false;
             }
         }
+
     }
+
 }

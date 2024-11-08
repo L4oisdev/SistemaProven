@@ -1216,6 +1216,7 @@
       },
       "SistemaProven.DAL/1.0.0": {
         "dependencies": {
+          "FirebaseAuthentication.net": "3.7.2",
           "SistemaProven.Entity": "1.0.0"
         },
         "runtime": {
@@ -1224,6 +1225,7 @@
       },
       "SistemaProven.Entity/1.0.0": {
         "dependencies": {
+          "FirebaseAuthentication.net": "3.7.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8"
         },
         "runtime": {
