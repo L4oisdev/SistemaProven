@@ -40,6 +40,8 @@ namespace SistemaProven.IOC
 
             services.AddScoped<IUsuarioService, UsuarioService>();
 
+            services.AddScoped<INegocioService, NegocioService>();
+
         }
     }
 }  
