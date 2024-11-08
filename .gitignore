@@ -362,6 +362,60 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# Ignorar archivos de compilación de .NET
+# Archivos generados por Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+*.builds
+*.pidb
+*.svclog
+*.scc
+
+# Ignorar archivos de binarios y carpetas temporales
 bin/
 obj/
+**/obj/
+**/bin/
+
+# Ignorar archivos de configuración de paquetes y otros temporales
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+project.lock.json
+project.fragment.lock.json
+*.cache
+
+# Ignorar configuración específica de Visual Studio
+.vscode/
+.vs/
+.idea/
+
+# Ignorar archivos de configuración de NuGet
+*.nupkg
+*.snupkg
+project.nuget.cache
+*.nuspec
+NuGet.Config
+NuGet.exe
