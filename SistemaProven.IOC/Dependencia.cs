@@ -44,6 +44,8 @@ namespace SistemaProven.IOC
 
             services.AddScoped<ICategoriaService, CategoriaService>();
 
+            services.AddScoped<IProductoService, ProductoService>();
+
         }
     }
 }  
