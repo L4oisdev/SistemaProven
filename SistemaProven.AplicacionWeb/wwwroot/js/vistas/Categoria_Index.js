@@ -1,52 +1,25 @@
-﻿
-
-const MODELO_BASE = {
-    idUsuario: 0,
-    nombre: "",
-    correo: "",
-    telefono: "",
-    idRol: 0,
+﻿const MODELO_BASE = {
+    idCategoria: 0,
+    descripcion: "",
     esActivo: 1,
-    urlFoto: ""
 }
+
 
 let tablaData;
 
 $(document).ready(function () {
 
-    fetch("/Usuario/ListaRoles")
-        .then(response => {
-            return response.ok ? response.json() : Promise.reject(response);
-        })
-        .then(responseJson => {
-            if (responseJson.length > 0) {
-                responseJson.forEach((item) => {
-                    $("#cboRol").append(
-                        $("<option>").val(item.idRol).text(item.descripcion)
-                    )
-                })
-            }
-        })
-
 
     tablaData = $('#tbdata').DataTable({
         responsive: true,
         "ajax": {
-            "url": '/Usuario/Lista',
+            "url": '/Categoria/Lista',
             "type": "GET",
             "datatype": "json"
         },
         "columns": [
-            { "data": "idUsuario", "visible": false, "searchable": false },
-            {
-                "data": "urlFoto", render: function (data) {
-                    return `<img style="height:60px" src=${data} class="rounded mx-auto d-block"/>`
-                }
-            },
-            { "data": "nombre" },
-            { "data": "correo" },
-            { "data": "telefono" },
-            { "data": "nombreRol" },
+            { "data": "idCategoria", "visible": false, "searchable": false },
+            { "data": "descripcion" },
             {
                 "data": "esActivo", render: function (data) {
                     if (data == 1)
@@ -70,9 +43,9 @@ $(document).ready(function () {
                 text: 'Exportar Excel',
                 extend: 'excelHtml5',
                 title: '',
-                filename: 'Reporte Usuarios',
+                filename: 'Reporte Categorias',
                 exportOptions: {
-                    columns: [2, 3, 4, 5, 6]
+                    columns: [1,2]
                 }
             }, 'pageLength'
         ],
@@ -85,15 +58,9 @@ $(document).ready(function () {
 
 
 function mostrarModal(modelo = MODELO_BASE) {
-    $("#txtId").val(modelo.idUsuario)
-    $("#txtNombre").val(modelo.nombre)
-    $("#txtCorreo").val(modelo.correo)
-    $("#txtTelefono").val(modelo.telefono)
-    $("#cboRol").val(modelo.idRol == 0 ? $("#cboRol option:first").val() : modelo.idRol)
+    $("#txtId").val(modelo.idCategoria)
+    $("#txtDescripcion").val(modelo.descripcion)
     $("#cboEstado").val(modelo.esActivo)
-    $("#txtFoto").val("")
-    $("#imgUsuario").attr("src", modelo.urlFoto)
-
 
     $("#modalData").modal("show")
 }
@@ -105,38 +72,27 @@ $("#btnNuevo").click(function () {
 
 $("#btnGuardar").click(function () {
 
-    const inputs = $("input.input-validar").serializeArray();
-    const inputs_sin_valor = inputs.filter((item) => item.value.trim() == "")
 
-    if (inputs_sin_valor.length > 0) {
-        const mensaje = `Debe completar el campo : "${inputs_sin_valor[0].name}"`;
-        toastr.warning("", mensaje)
-        $(`input[name="${inputs_sin_valor[0].name}"]`).focus()
+    if ($("#txtDescripcion").val().trim() == "") {
+        toastr.warning("", "Debe completa el campo : descripcion")
+        $("#txtDescripcion").focus()
         return;
     }
 
+
     const modelo = structuredClone(MODELO_BASE);
-    modelo["idUsuario"] = parseInt($("#txtId").val())
-    modelo["nombre"] = $("#txtNombre").val()
-    modelo["correo"] = $("#txtCorreo").val()
-    modelo["telefono"] = $("#txtTelefono").val()
-    modelo["idRol"] = $("#cboRol").val()
+    modelo["idCategoria"] = parseInt($("#txtId").val())
+    modelo["descripcion"] = $("#txtDescripcion").val()
     modelo["esActivo"] = $("#cboEstado").val()
-
-    const inputFoto = document.getElementById("txtFoto")
-
-    const formData = new FormData();
-
-    formData.append("foto", inputFoto.files[0])
-    formData.append("modelo", JSON.stringify(modelo))
 
     $("#modalData").find("div.modal-content").LoadingOverlay("show");
 
-    if (modelo.idUsuario == 0) {
+    if (modelo.idCategoria == 0) {
 
-        fetch("/Usuario/Crear", {
+        fetch("/Categoria/Crear", {
             method: "POST",
-            body: formData
+            headers: { "Content-Type":"application/json; charset=utf-8"},
+            body: JSON.stringify(modelo)
         })
             .then(response => {
                 $("#modalData").find("div.modal-content").LoadingOverlay("hide");
@@ -148,15 +104,16 @@ $("#btnGuardar").click(function () {
 
                     tablaData.row.add(responseJson.objeto).draw(false)
                     $("#modalData").modal("hide")
-                    swal("Listo!", "El usuario fue creado", "success")
+                    swal("Listo!", "La categoria fue creada", "success")
                 } else {
                     swal("Los sentimos", responseJson.mensaje, "error")
                 }
             })
     } else {
-        fetch("/Usuario/Editar", {
+        fetch("/Categoria/Editar", {
             method: "PUT",
-            body: formData
+            headers: { "Content-Type": "application/json; charset=utf-8" },
+            body: JSON.stringify(modelo)
         })
             .then(response => {
                 $("#modalData").find("div.modal-content").LoadingOverlay("hide");
@@ -169,7 +126,7 @@ $("#btnGuardar").click(function () {
                     tablaData.row(filaSeleccionada).data(responseJson.objeto).draw(false);
                     filaSeleccionada = null;
                     $("#modalData").modal("hide")
-                    swal("Listo!", "El usuario fue modificado", "success")
+                    swal("Listo!", "La categoria fue modificada", "success")
                 } else {
                     swal("Los sentimos", responseJson.mensaje, "error")
                 }
@@ -179,6 +136,7 @@ $("#btnGuardar").click(function () {
 
 
 })
+
 
 let filaSeleccionada;
 $("#tbdata tbody").on("click", ".btn-editar", function () {
@@ -195,6 +153,8 @@ $("#tbdata tbody").on("click", ".btn-editar", function () {
 
 })
 
+
+
 $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
     let fila;
@@ -208,7 +168,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
     swal({
         title: "¿Está seguro?",
-        text: `Eliminar al usuario "${data.nombre}"`,
+        text: `Eliminar la categoria "${data.descripcion}"`,
         type: "warning",
         showCancelButton: true,
         confirmButtonClass: "btn-danger",
@@ -223,7 +183,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                 $(".showSweetAlert").LoadingOverlay("show");
 
-                fetch(`/Usuario/Eliminar?IdUsuario=${data.idUsuario}`, {
+                fetch(`/Categoria/Eliminar?IdCategoria=${data.idCategoria}`, {
                     method: "DELETE"
                 })
                     .then(response => {
@@ -236,7 +196,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
 
                             tablaData.row(fila).remove().draw()
 
-                            swal("Listo!", "El usuario fue eliminado", "success")
+                            swal("Listo!", "La categoria fue eliminada", "success")
                         } else {
                             swal("Los sentimos", responseJson.mensaje, "error")
                         }
