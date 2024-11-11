@@ -20,7 +20,7 @@ namespace SistemaProven.DAL.Implementacion
                 _dbContext = dbContext;
         }
 
-        public async Task<Venta> Regisstrar(Venta venta)
+        public async Task<Venta> Registrar(Venta venta)
         {
             Venta ventaGenerada = new Venta();
 

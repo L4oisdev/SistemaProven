@@ -11,7 +11,7 @@ namespace SistemaProven.DAL.Interfaces
 {
     public interface IVentaRepository: IGenericRepository<Venta>
     {
-        Task<Venta> Regisstrar(Venta venta);
+        Task<Venta> Registrar(Venta venta);
 
         Task<List<DetalleVenta>> Reporte(DateTime FechaInicio, DateTime FechaFinal);
     }
