@@ -50,6 +50,8 @@ namespace SistemaProven.IOC
 
             services.AddScoped<IVentaService, VentaService>();
 
+            services.AddScoped<IDashBoardService, DashBoardService>();
+
         }
     }
 }  
