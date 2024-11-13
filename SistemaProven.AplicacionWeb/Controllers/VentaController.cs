@@ -6,8 +6,8 @@ using SistemaProven.AplicacionWeb.Utilidades.Response;
 using SistemaProven.BLL.Interfaces;
 using SistemaProven.Entity;
 
-//using DinkToPdf;
-//using DinkToPdf.Contracts;
+using DinkToPdf;
+using DinkToPdf.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using System.Drawing.Printing;
@@ -19,18 +19,18 @@ namespace SistemaProven.AplicacionWeb.Controllers
         private readonly ITipoDocumentoVentaService _tipoDocumentoVentaServicio;
         private readonly IVentaService _ventaServicio;
         private readonly IMapper _mapper;
-        //private readonly IConverter _converter;
+        private readonly IConverter _converter;
 
         public VentaController(ITipoDocumentoVentaService tipoDocumentoVentaServicio,
             IVentaService ventaServicio,
-            IMapper mapper
-             //IConverter converter
+            IMapper mapper,
+            IConverter converter
             )
         {
             _tipoDocumentoVentaServicio = tipoDocumentoVentaServicio;
             _ventaServicio = ventaServicio;
             _mapper = mapper;
-            //_converter = converter;
+            _converter = converter;
         }
 
         public IActionResult NuevaVenta()
@@ -69,13 +69,14 @@ namespace SistemaProven.AplicacionWeb.Controllers
 
             try
             {
-                ClaimsPrincipal claimUser = HttpContext.User;
+                //ClaimsPrincipal claimUser = HttpContext.User;
 
-                string idUsuario = claimUser.Claims
-                    .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                    .Select(c => c.Value).SingleOrDefault();
+                //string idUsuario = claimUser.Claims
+                //    .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                //    .Select(c => c.Value).SingleOrDefault();
 
-                modelo.IdUsuario = int.Parse(idUsuario);
+                //modelo.IdUsuario = int.Parse(idUsuario);
+                modelo.IdUsuario = 1;
 
                 Venta venta_creada = await _ventaServicio.Registrar(_mapper.Map<Venta>(modelo));
                 modelo = _mapper.Map<VMVenta>(venta_creada);
@@ -102,7 +103,7 @@ namespace SistemaProven.AplicacionWeb.Controllers
 
             return StatusCode(StatusCodes.Status200OK, vmHistorialVenta);
         }
-        /*
+
         public IActionResult MostrarPDFVenta(string numeroVenta)
         {
 
@@ -112,7 +113,7 @@ namespace SistemaProven.AplicacionWeb.Controllers
             {
                 GlobalSettings = new GlobalSettings()
                 {
-                    PaperSize = PaperKind.A4,
+                    PaperSize = DinkToPdf.PaperKind.A4,
                     Orientation = Orientation.Portrait,
                 },
                 Objects = {
@@ -126,6 +127,6 @@ namespace SistemaProven.AplicacionWeb.Controllers
 
             return File(archivoPDF, "application/pdf");
 
-        }*/
+        }
     }
 }

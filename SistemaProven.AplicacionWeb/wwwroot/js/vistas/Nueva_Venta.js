@@ -250,7 +250,7 @@ $("#btnTerminarVenta").click(function () {
                 swal("Registrado!", `Numero Venta : ${responseJson.objeto.numeroVenta}`, "success")
             } else {
                 swal("Lo sentimos!", "No se pudo registrar la venta", "error")
-            }
+            } 
         })
 
 })

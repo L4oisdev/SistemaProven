@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="DinkToPdf" Version="1.0.8" />
     <PackageReference Include="FirebaseAuthentication.net" Version="3.7.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
   </ItemGroup>
@@ -16,6 +17,18 @@
     <ProjectReference Include="..\SistemaProven.BLL\SistemaProven.BLL.csproj" />
     <ProjectReference Include="..\SistemaProven.Entity\SistemaProven.Entity.csproj" />
     <ProjectReference Include="..\SistemaProven.IOC\SistemaProven.IOC.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Utilidades\LibreriaPDF\libwkhtmltox.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Utilidades\LibreriaPDF\libwkhtmltox.dylib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Utilidades\LibreriaPDF\libwkhtmltox.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
