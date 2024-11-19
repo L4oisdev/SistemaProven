@@ -1,0 +1,114 @@
+﻿@model SistemaProven.AplicacionWeb.Models.ViewModels.VMUsuarioLogin;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Mi Tienda - Login</title>
+
+    <!-- Custom fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .bg-login-image {
+            background: url('img/comercio.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .btn-primary {
+            background-color: #4e73df;
+            border-color: #4e73df;
+        }
+
+            .btn-primary:hover {
+                background-color: #2e59d9;
+                border-color: #2653d4;
+            }
+
+        .custom-control-label {
+            color: #5a5c69;
+        }
+
+        .text-center a {
+            color: #4e73df;
+        }
+
+            .text-center a:hover {
+                color: #2e59d9;
+            }
+
+        .form-control {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card o-hidden border-0 shadow-lg">
+            <div class="row no-gutters">
+                <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                <div class="col-lg-6">
+                    <div class="p-5">
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Bienvenido</h1>
+                        </div>
+                        <form class="user" asp-controller="Acceso" asp-action="Login" method="post">
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-user" placeholder="Correo" asp-for="Correo">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-user" placeholder="Contraseña" asp-for="Clave">
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox small">
+                                    <input type="checkbox" class="custom-control-input" id="chkMantenerSesion" asp-for="MantenerSesion">
+                                    <label class="custom-control-label" for="chkMantenerSesion">Mantener Sesión</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                                Ingresar
+                            </button>
+                        </form>
+                        <hr>
+                        <div class="text-center">
+                            <a class="small" href="@Url.Action("RestablecerClave","Acceso")">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
