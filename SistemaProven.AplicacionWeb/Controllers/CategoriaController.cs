@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SistemaProven.AplicacionWeb.Models.ViewModels;
 using SistemaProven.AplicacionWeb.Utilidades.Response;
@@ -7,6 +8,7 @@ using SistemaProven.Entity;
 
 namespace SistemaProven.AplicacionWeb.Controllers
 {
+    [Authorize]
     public class CategoriaController : Controller
     {
         private readonly IMapper _mapper;

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SistemaProven.AplicacionWeb.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class NegocioController : Controller
     {
         private readonly IMapper _mapper;

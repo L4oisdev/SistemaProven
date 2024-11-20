@@ -6,10 +6,11 @@ using SistemaProven.AplicacionWeb.Models.ViewModels;
 using SistemaProven.AplicacionWeb.Utilidades.Response;
 using SistemaProven.BLL.Interfaces;
 using SistemaProven.Entity;
-//using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SistemaProven.AplicacionWeb.Controllers
 {
+    [Authorize]
     public class UsuarioController : Controller
     {
 

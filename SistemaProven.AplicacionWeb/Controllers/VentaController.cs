@@ -14,6 +14,7 @@ using System.Drawing.Printing;
 
 namespace SistemaProven.AplicacionWeb.Controllers
 {
+    [Authorize]
     public class VentaController : Controller
     {
         private readonly ITipoDocumentoVentaService _tipoDocumentoVentaServicio;
@@ -69,14 +70,13 @@ namespace SistemaProven.AplicacionWeb.Controllers
 
             try
             {
-                //ClaimsPrincipal claimUser = HttpContext.User;
+                ClaimsPrincipal claimUser = HttpContext.User;
 
-                //string idUsuario = claimUser.Claims
-                //    .Where(c => c.Type == ClaimTypes.NameIdentifier)
-                //    .Select(c => c.Value).SingleOrDefault();
+                string idUsuario = claimUser.Claims
+                    .Where(c => c.Type == ClaimTypes.NameIdentifier)
+                    .Select(c => c.Value).SingleOrDefault();
 
-                //modelo.IdUsuario = int.Parse(idUsuario);
-                modelo.IdUsuario = 1;
+                modelo.IdUsuario = int.Parse(idUsuario);
 
                 Venta venta_creada = await _ventaServicio.Registrar(_mapper.Map<Venta>(modelo));
                 modelo = _mapper.Map<VMVenta>(venta_creada);

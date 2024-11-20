@@ -12,14 +12,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mi Tienda - Login</title>
+    <title>Proven - Login</title>
 
     <!-- Custom fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 
     <!-- Custom styles -->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
 
     <style>
         body {
@@ -39,7 +39,7 @@
         }
 
         .bg-login-image {
-            background: url('img/comercio.png') no-repeat center center;
+            background: url('@Url.Content("~/img/comercio.png")') no-repeat center center;
             background-size: cover;
         }
 
@@ -95,6 +95,14 @@
                                     <label class="custom-control-label" for="chkMantenerSesion">Mantener Sesión</label>
                                 </div>
                             </div>
+                            @if (ViewData["Mensaje"] != null)
+                            {
+                                <div class="form-group">
+                                    <div class="alert alert-danger" role="alert">
+                                        @ViewData["Mensaje"]
+                                    </div>
+                                </div>
+                            }
                             <button type="submit" class="btn btn-primary btn-user btn-block">
                                 Ingresar
                             </button>

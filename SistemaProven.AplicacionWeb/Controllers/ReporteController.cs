@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SistemaProven.AplicacionWeb.Controllers
 {
+    [Authorize]
     public class ReporteController : Controller
     {
         private readonly IMapper _mapper;

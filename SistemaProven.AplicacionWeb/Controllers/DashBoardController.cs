@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 using SistemaProven.AplicacionWeb.Models.ViewModels;
 using SistemaProven.AplicacionWeb.Utilidades.Response;
@@ -7,6 +8,7 @@ using SistemaProven.BLL.Interfaces;
 
 namespace SistemaProven.AplicacionWeb.Controllers
 {
+    [Authorize]
     public class DashBoardController : Controller
     {
         private readonly IDashBoardService _dashboardServicio;
