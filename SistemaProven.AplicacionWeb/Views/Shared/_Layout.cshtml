@@ -38,8 +38,9 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            @await Component.InvokeAsync("Menu")
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+@*             <li class="nav-item">
                 <a class="nav-link" href="@Url.Action("Index","DashBoard")">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
@@ -98,7 +99,7 @@
                         <a class="collapse-item" href="@Url.Action("Index","Reporte")">Reporte de Ventas</a>
                     </div>
                 </div>
-            </li>
+            </li> *@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
